@@ -14,24 +14,21 @@
       right: 0;
       top: 0;
   }
-  h1{
-      text-align: justify;
-      margin-left: 60px;
-      padding-bottom:10px;
-  }
+.portflow{
+  display: flex;
+  align-items: flex-start;
+  margin-left: 30px;
+}
 ul{
-    width: 30%;
-    align-items: center;
-    margin-left: 900px;
-    padding-bottom: 30px;
+    padding:1vw;
     display:flex;
-    justify-content:space-between;
-    color: grey;
-    text-align: right;
-  }
+    justify-content: space-between;
+    margin-left: 700px;
+    color:grey;
+}
   li:hover{
     cursor:pointer;
-    color:black;
+    color: darkblue;
   }
 .orange{
     width: 50%;
@@ -49,7 +46,17 @@ ul{
 }
 div{
     width: 26%;
+    margin-bottom: 30px;
     display: flex;
-    align-items: center;
+    margin-left: 30px;
+}
+.footer-container{
+    display: flex;
     justify-content: space-between;
+  background-color: grey
+
+}
+.icons{
+  display: flex;
+  margin-right: 2vh;
 }
