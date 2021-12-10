@@ -1,62 +1,190 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 *{
-    margin:0;
-    padding:0;                      
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
-    list-style:none;
-  }
-  .header-container{
-      width: 100%;
-      height: 15%;
-      background-color: white;
-      position: fixed;
-      right: 0;
-      top: 0;
-  }
-.portflow{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body{
+  font-size: 20px;
+  font-weight: bold;
+  font-family:'Montserrat', sans-serif;
+}
+
+.title {
   display: flex;
-  align-items: flex-start;
-  margin-left: 30px;
-}
-ul{
-    padding:1vw;
-    display:flex;
-    justify-content: space-between;
-    margin-left: 700px;
-    color:grey;
-}
-  li:hover{
-    cursor:pointer;
-    color: darkblue;
-  }
-.orange{
-    width: 50%;
-    display: flex;
-    align-items: center
-}
-.main-container{
-    width: 100%;
-    margin-top: 10vh;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-}
-div{
-    width: 26%;
-    margin-bottom: 30px;
-    display: flex;
-    margin-left: 30px;
-}
-.footer-container{
-    display: flex;
-    justify-content: space-between;
-  background-color: grey
+  justify-content: flex-end;
+  width: 15%;
+  font-weight: bolder;
 
 }
-.icons{
+
+header {
   display: flex;
-  margin-right: 2vh;
+  justify-content: space-between;
+  align-items: center;
+  height: 10%;
+  width: 100%;
 }
+
+@media(max-width:600px){
+  header{
+      width: 100%;
+      height: 5%;
+  }
+  .title{
+      display: flex;
+      justify-content: center;
+      font-size: 30px;
+      width: 86%;
+  }
+}
+
+nav {
+  width: 35%;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+  color: grey;
+  list-style: none;
+  font-size: 15px;
+  font-weight: bold;
+
+}
+li:hover { 
+  color:darkblue;
+  cursor:pointer;
+  
+}
+
+.portifolio {
+ color: black;
+}
+
+
+@media(max-width:600px){
+  nav{
+     display: none;
+  }
+}
+
+.text {
+  background-image: url("imagens/laranja\ azul\ recorte.png"); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 75%;
+  width: 100%;
+}
+
+@media(max-width:600px) {
+  .text {
+      background-image: url(laranjaazulrecorte.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 80%;
+      width: 100%;
+      margin-bottom: 12%;
+  }
+}
+
+.text1 { 
+  color: aliceblue;
+  padding-top: 17%;
+  font-size: 30px;
+  margin-left: 10%;
+  height: 100%;
+  width: 65%;
+}
+
+@media(max-width:600px){
+  .text1{
+      display: flex;
+      align-items: flex-end;
+      flex-wrap: wrap;
+      font-size:35px;
+      margin-left: 15%;
+  }
+  h1 {
+      display: flex;
+      align-items: flex-end;
+      height: 80%;
+      font-size: 20px;
+      margin-bottom: 1vw;
+
+  }
+
+}
+
+.images-container { 
+  display: flex;
+  justify-content: space-around;
+  height: 33%;
+  width: 70%;
+  margin: 2%;
+  margin-left: 14%;
+}
+
+@media(max-width:600px){
+  .s..images-container{
+      flex-direction: column;
+      height: 140%;
+      width: 60%;
+
+  }
+
+}
+
+footer{ 
+  display: flex;
+  flex-wrap: wrap;
+  background-color: gainsboro;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 5%;
+  margin: 3%;
+  width: 45%;
+}
+.icons:hover{
+  color: darkorange;
+  cursor: pointer;
+
+}
+.text2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 12px;
+  width: 49%;
+}
+
+@media(max-width:600px){
+  footer{
+      background-color: #0000;
+      flex-wrap: wrap;
+      height: 30%;
+      width: 100%;
+  }
+  .icons{
+      display: flex;
+      justify-content: space-around;
+      margin-left: 8%;
+      height: 30%;
+      width: 70%;
+      background-color:#7FDBD4 ;
+  }
+  .text2{
+      display: flex;
+      justify-content:center;
+      flex-wrap: wrap;
+      margin-left: 9%;
+      height: 50%;
+      width: 70%;
+      font-size: 20px;
+
+  }
+} 
